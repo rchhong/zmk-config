@@ -1,0 +1,7 @@
+.west/
+zephyr/
+firmwares/
+zmk/
+zmk-pmw3610-driver/
+prospector-zmk-module/
+modules/

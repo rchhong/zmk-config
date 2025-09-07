@@ -1,0 +1,19 @@
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+#include "split_input_common.dtsi"
+
+&trackball_listener {
+    /* base processor chain on all layers */
+    input-processors = <&zip_xy_scaler 5 12>;
+
+    scroll: scroll {
+        layers           = <6>;
+         // Inverts the scroll direction, scales scroll speed, converts xy movement to scroll events
+        input-processors = <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 2 12>, <&zip_xy_to_scroll_mapper>;
+    };
+
+    snipe: snipe {
+        layers           = <5>;
+        input-processors = <&zip_xy_scaler 2 6>;
+    };
+};
