@@ -49,13 +49,13 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC  |  !  |  @  |  #   |  $  |  %  |   |  ^  |  &  |  *   |  (  |  )  |     |
-// |  GUI  |     |     |      |     |     |   |  -  |  =  |  [   |  ]  |  \  |  `  |
-// | SHIFT |     |     |      |     |     |   |  _  |  +  |  {   |  }  | "|" |  ~  |
+// |  GUI  |     |     |      |     |     |   |  -  |  =  |  [   |  ]  |  |  |  `  |
+// | SHIFT |     |     |      |     |     |   |  _  |  +  |  {   |  }  | "\" |  ~  |
 //                     | CTRL |     | SPC |   | ENT |     | BSPC |
                         bindings = <
    &kp ESC   &kp EXCL &kp AT &kp HASH  &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
-   &kp LGUI  &trans   &trans &trans    &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans    &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+   &kp LGUI  &trans   &trans &trans    &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp PIPE &kp GRAVE
+   &kp LSHFT &trans   &trans &trans    &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp BSLH &kp TILDE
                              &kp LCTRL &trans   &kp SPACE   &kp RET   &trans    &kp BSPC
                         >;
                 };
